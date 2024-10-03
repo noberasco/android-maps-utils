@@ -167,7 +167,7 @@ subprojects { project ->
             }
         }
 
-        repositories {
+        /*repositories {
             maven {
                 name = "mavencentral"
                 url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
@@ -176,10 +176,10 @@ subprojects { project ->
                     password sonatypeTokenPassword
                 }
             }
-        }
+        }*/
     }
 
-    signing {
+    /*signing {
         sign publishing.publications.aar
-    }
+    }*/
 }

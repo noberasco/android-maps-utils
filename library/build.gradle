@@ -78,6 +78,10 @@ dependencies {
 
 tasks.register('instrumentTest') { dependsOn connectedCheck }
 
+tasks.named('publishAarPublicationToMavenLocal') {
+    dependsOn 'bundleReleaseAar'
+}
+
 if (System.getenv("JITPACK")) {
-    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
 }
